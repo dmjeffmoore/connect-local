@@ -1,0 +1,15 @@
+{
+  "name": "connect-local",
+  "version": "1.0.0",
+  "description": "A social connection app that combats loneliness by matching people with shared interests for local activities",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": ["electron", "chat", "social", "connection"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}
