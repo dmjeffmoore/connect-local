@@ -2,14 +2,40 @@
   "name": "connect-local",
   "version": "1.0.0",
   "description": "A social connection app that combats loneliness by matching people with shared interests for local activities",
-  "main": "main.js",
+  "main": "index.html",
   "scripts": {
-    "start": "electron ."
+    "start": "npx http-server www -p 8080 -o",
+    "backend": "cd backend && ./pocketbase serve --http=127.0.0.1:8090",
+    "dev": "echo 'Run \"npm run backend\" in one terminal and \"npm start\" in another terminal'",
+    "build": "echo 'Build step - will add bundler later if needed'",
+    "ios": "npx cap run ios",
+    "android": "npx cap run android",
+    "sync": "npx cap sync",
+    "cap:add:ios": "npx cap add ios",
+    "cap:add:android": "npx cap add android"
   },
-  "keywords": ["electron", "chat", "social", "connection"],
+  "keywords": [
+    "capacitor",
+    "chat",
+    "social",
+    "connection",
+    "mobile",
+    "ios",
+    "android"
+  ],
   "author": "Your Name",
   "license": "MIT",
+  "dependencies": {
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/geolocation": "^6.0.0",
+    "@capacitor/haptics": "^6.0.0",
+    "@capacitor/network": "^6.0.0",
+    "@capacitor/preferences": "^6.0.0",
+    "@capacitor/push-notifications": "^6.0.0",
+    "pocketbase": "^0.26.3"
+  },
   "devDependencies": {
-    "electron": "^38.0.0"
+    "http-server": "^14.1.1"
   }
 }

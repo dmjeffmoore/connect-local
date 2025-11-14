@@ -137,3 +137,15 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Capacitor
+ios/
+android/
+.capacitor/
+
+# Local config files
+capacitor.config.json.bak
+
+# PocketBase
+backend/pb_data/
+backend/pb_migrations/
